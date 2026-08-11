@@ -5,16 +5,16 @@ class Complex {
     int real,imag;
     
     public:
-    Complex(int r=0, int i=0):real(r),image(i){}
+    Complex(int r=0, int i=0):real(r),imag(i){}
 
     Complex add(const Complex &c){
-        return Complex(real+c.real,image+c.imag);
+        return Complex(real+c.real,imag+c.imag);
 
     }
     Complex substract(const Complex &c){
-        return Complex(real-c.real,image-c.imag); }
+        return Complex(real-c.real,imag-c.imag); }
         void display()const{
-            cout<<real<<"-i"<<image<<endl;
+            cout<<real<<"-i"<<imag<<endl;
         }
 
 };
