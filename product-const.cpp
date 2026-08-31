@@ -8,7 +8,16 @@ class Product
     float price;
 
 public:
-void getdata()
+
+Product(string n,int p, int q,float r)
+{
+    productName=n;
+    productId=p;
+    quantity=q;
+     price=r;
+
+}
+   /* void getdata()
     {
         cout << "Enter Product Name: ";
         cin >> productName;
@@ -20,7 +29,8 @@ void getdata()
         cin >> quantity;
 
         cout << "Enter Price: ";
-        cin >> price;}
+        cin >> price;
+    }*/
 
     void putdata()
     {
@@ -34,9 +44,9 @@ void getdata()
 
 int main()
 {
-    Product p;
+    Product p("ado",76567,7,99999);
 
-    p.getdata();
+   // p.getdata();
     p.putdata();
 
     return 0;

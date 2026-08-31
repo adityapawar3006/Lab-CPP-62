@@ -11,6 +11,15 @@ private:
     int age;
 
 public:
+
+Employee (int i, string n ,float s, string d, int a)
+{
+    id = i;
+    name=n;
+    salary=s;
+    department=d;
+    age=a;
+}
     void getData()
     {
         cout << "Enter Employee ID: ";
@@ -43,9 +52,9 @@ public:
 
 int main()
 {
-    Employee e;
+    Employee e(5236532,"aitau",8789789,"sjf",18);
 
-    e.getData();
+   // e.getData();
     e.displayData();
 
     return 0;
