@@ -17,8 +17,8 @@ class student
     }
     student()
     {}
-    void getdata()
-    {
+   // void getdata()
+    /*{
         cout<<"Enter your name"<<endl;
         cin>>name;
          cout<<"Enter your Roll no"<<endl;
@@ -26,7 +26,7 @@ class student
           cout<<"Enter your Division"<<endl;
           cin>>div;
         
-    }
+    }*/
     void putdata()
     {
         cout<<"/n-------Student Details-------"<<endl;
@@ -43,17 +43,16 @@ int main()
     student s3("Dhananjay",60,'a');
     student s4("Akshay",64,'b');
 
-
-    s1.getdata();
+    //s1.getdata();
     s1.putdata();
 
-    s2.getdata();
+    //s2.getdata();
     s2.putdata();
 
-    s3.getdata();
+   // s3.getdata();
     s3.putdata();
 
-    s4.getdata();
+   // s4.getdata();
     s4.putdata();
 
 }
